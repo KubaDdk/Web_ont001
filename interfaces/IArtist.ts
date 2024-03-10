@@ -1,4 +1,4 @@
-type RecordLabel = {
+export type RecordLabel = {
     id: string;
     name: string;
     labelLogoUrl: string;
@@ -7,7 +7,7 @@ type RecordLabel = {
     headquarters: string;
   };
   
-  type Artist = {
+export type Artist = {
     id: string;
     name: string;
     description: string;
