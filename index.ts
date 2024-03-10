@@ -14,7 +14,15 @@ console.log();
 if (userChoice === 1) {
   // print only artists names
     artists.forEach((artist: Artist) => {
-        console.log(`- ${artist.name}`);
+        console.log(`- ${artist.name} (${artist.id})`);
     });
+} else if (userChoice === 2) {
+    let artistId: string = readline.question("Please enter the ID you want to filter by: ");
+    let artist: Artist | undefined = artists.find((a: Artist) => a.id === artistId);
+    if (artist) {
+        console.log(artist);
+    } else {
+        console.log("Artist not found");
+    }
 }
 
