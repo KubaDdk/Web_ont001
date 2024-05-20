@@ -1,4 +1,4 @@
-[
+export default [
     {
       "id": "ART-001",
       "name": "Metallica",
